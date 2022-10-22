@@ -70,11 +70,17 @@ section li {
     border: 1px solid;
 }
 
+.data {
+    font-size: 1.3rem;
+}
+
 .data div {
+    background: #141c22;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.2rem 1rem;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
 }
 
 .weeklyTarget {
