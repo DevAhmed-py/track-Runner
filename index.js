@@ -1,5 +1,9 @@
 let entries = []
 
+function newEntry(newEntry) {
+    const listItems = document.createElement("li")
+}
+
 function submitHandler (event) {
     event.preventDefault()
     const entry = Number(document.querySelector("#milesToday").value);
