@@ -3,7 +3,7 @@ let entries = []
 const entriesWrapper = document.querySelector("entries")
 
 function newEntry(newEntry) {
-//     entriesWrapper.removeChild(entriesWrapper.firstElementChild)
+    entriesWrapper.removeChild(entriesWrapper.firstElementChild)
     const listItems = document.createElement("li")
     const listValue = document.createTextNode(newEntry)
     listItems.appendChild(listValue)
