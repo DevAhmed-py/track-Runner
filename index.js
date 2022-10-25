@@ -16,14 +16,19 @@ function reducer(total, currentValue) {
 }
 
 function calcTotal() {
-    const totalValue = entries.reduce(reducer)
+    const totalValue = entries.reduce(reducer).toFixed(1)
     document.getElementById("total").innerText = totalValue
     document.getElementById("progressTotal").innerText = totalValue
 }
 
 function calcAverage() {
-    const average = entries.reduce(reducer) / entries.length
+    const average = (entries.reduce(reducer) / entries.length).toFixed(1)
     document.getElementById("average").innerText = average
+}
+
+function weekHigh() {
+    const high = Math.max(...entries)
+    document.getElementById("")
 }
 
 function submitHandler (event) {
