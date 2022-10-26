@@ -1,4 +1,5 @@
 let entries = []
+let goal = 25
 
 const ulEntriesWrapper = document.querySelector("#entries")
 
@@ -28,10 +29,20 @@ function calcAverage() {
 
 function weekHigh() {
     const high = Math.max(...entries)
-    document.getElementById("")
+    document.getElementById("high").innerText = high
 }
 
-function submitHandler (event) {
+function calcProgress() {
+    const totalValue = entries.reduce(reducer).toFixed(1)
+    const percent = (totalValue / goal) * 100
+    const progressCircle = document.querySelector(".progressCircle")
+    if (percent > 100) {
+        percent === 100
+    }
+    progressCircle.style.background = `conic-gradient(#70db70 ${percent}%, #2d3740 ${percent}%)`
+}
+
+function submitHandler(event) {
     // To prevent the browser from reloading which is the default thing to 
     // do after submitting a form, you call the preventDefault().
     event.preventDefault() 
@@ -45,6 +56,8 @@ function submitHandler (event) {
     newEntryAdd(entry)
     calcTotal()
     calcAverage()
+    weekHigh()
+    calcProgress()
 }
 
 const form = document.querySelector("form")

@@ -13,21 +13,22 @@ body {
 }
 
 .runner {
-    text-align: center;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .inputSection {
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem;
 }
 
 form label {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 #milesToday {
-    margin: 0.8rem 0;
-    width: 60%;
+    margin: 0.5rem 0;
+    width: 50%;
     padding: 0.8rem 0;
     font-family: inherit;
     background:  rgb(230, 225, 225);
@@ -38,23 +39,20 @@ form label {
 
 form button {
     font-family: inherit;
-    font-size: 1.3rem;
-    font-weight: 500;
-    width: 5.5rem;
-    height: 5.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 4.5rem;
+    height: 4.5rem;
     border: none;
     border-radius: 50%;
     background: #0ad9ff;
-    margin: 0.5rem 0 1rem 0;
-}
-
-.entriesWrapper {
-    padding: 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 .entriesWrapper h3 {
-    font-size: 1.5rem;
-    font-weight: lighter;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
 }
 
 section ul {
@@ -84,5 +82,40 @@ section li {
 }
 
 .weeklyTarget {
-    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.progressWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.progressCircle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressCenter {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #1c262f;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        width: 40%;
+    }
+
+    input[type="number"] {
+        width: 40%;
+    }
+
+    svg {
+        max-width: 50%;
+    }
 }
