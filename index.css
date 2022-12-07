@@ -12,6 +12,12 @@ body {
     text-align: center;
 }
 
+.main-container {
+    max-height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
 .runner {
     width: 70%;
     margin: 0 auto;
