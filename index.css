@@ -1,6 +1,7 @@
 html {
     font-family: 'Roboto Serif', serif;
     background: #2d3740;
+    font-size: 8px;
 }
 
 body {
@@ -12,11 +13,11 @@ body {
     text-align: center;
 }
 
-.main-container {
+/* .main-container {
     max-height: 100vh;
     box-sizing: border-box;
     overflow: auto;
-}
+} */
 
 .runner {
     width: 70%;
